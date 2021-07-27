@@ -1,0 +1,141 @@
+/*Toute la page : */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Fredoka -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  font-family: 'montseratt', sans-serif;
+}
+
+main{
+  min-height: 100vh;
+  /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));*/
+  padding: 25px;
+}
+
+#boxes{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Tout le box weather : */
+#meteoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #91d2d9;
+  padding: 15px 20px 0px 20px;
+  margin: 50px 250px 20px 250px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgb(36, 36, 36);
+  width: 800px;
+  height: 450px;
+}
+
+/*Titre + date*/
+.location-box .location{
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+.location-box .date{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+/*Date du jour*/
+h2 {
+  color: #024351;
+  font-size: 15px;
+  text-shadow: none;
+  margin-bottom: 30px;
+}
+
+/*Titre de la boxe : What's the weather link in... */
+h1 {
+  color: #024351;
+  font-size: 25px;
+  text-shadow: none;
+}
+
+
+/*Données dynamiques de meteo + icones + pictos*/
+.weather-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 20px 75px 10px 75px;
+}
+/*Données dynamiques + icones*/ /* 3° C Mist*/
+#tempData{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/*Donnée dynamique de température*/
+.temp{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/*Donnée dynamique de temps*/
+.weather{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/*Icones*/
+.icons{
+  color: #d97e4a !important;
+  font-size: 50px;
+  padding: 0px 0px !important;
+  font-weight: bolder;
+}
+
+/*Données dynamiques*/
+.weatherText{
+  color: #024351;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0px 0px !important;
+  padding-left: 25px;
+}
+/*Lotties dynamiques*/
+.getLottie{
+  position: relative;
+  bottom: 50px;
+  left: 60px;
+}
+
+.getLottie svg{
+  max-height: 600px !important;
+  max-width: 600px !important;
+}
+
+.getLottie div{
+  overflow: visible;
+}
